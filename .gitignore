@@ -1,0 +1,13 @@
+.DS_Store
+.dart_tool/
+
+.packages
+.pub/
+
+build/
+
+.idea
+open_mail_app.iml
+
+# Ignore for libs
+pubspec.lock
