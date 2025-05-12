@@ -31,15 +31,6 @@ class OpenMailAppPlugin : FlutterPlugin, MethodCallHandler {
     // plugin registration via this function while apps migrate to use the new Android APIs
     // post-flutter-1.12 via https://flutter.dev/go/android-project-migration.
     //
-    override fun onAttachedToEngine(binding: FlutterPlugin.FlutterPluginBinding) {
-        channel = MethodChannel(binding.binaryMessenger, "open_mail_app")
-        channel.setMethodCallHandler(this)
-    }
-
-    override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {
-        channel.setMethodCallHandler(null)
-    }
-
 
     fun init(context: Context) {
         applicationContext = context
